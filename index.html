@@ -13,21 +13,43 @@
 </head>
 <body>
 <h1>AboneTakip — Gizlilik Politikası</h1>
-<p><em>Son güncelleme: 11 Temmuz 2026</em></p>
+<p><em>Son güncelleme: 20 Eylül 2026</em></p>
 
 <p>AboneTakip, aboneliklerinizi takip etmenize yardımcı olan bir mobil uygulamadır. Gizliliğiniz bizim için esastır ve uygulama <strong>gizlilik öncelikli</strong> tasarlanmıştır.</p>
 
 <h2>Topladığımız Veriler</h2>
-<p><strong>Hiçbir kişisel veri toplamıyoruz.</strong> AboneTakip:</p>
+<p><strong>Sizi doğrudan kimliklendiren hiçbir kişisel veri toplamıyoruz.</strong> AboneTakip:</p>
 <ul>
   <li>Hesap oluşturmanızı istemez; ad, e-posta, telefon numarası gibi kimlik bilgisi talep etmez.</li>
   <li>Banka veya kart bilgisi istemez, finansal hesaplarınıza erişmez.</li>
-  <li>Girdiğiniz abonelik bilgileri (servis adı, tutar, yenileme tarihi vb.) <strong>yalnızca cihazınızda</strong> saklanır; hiçbir sunucuya gönderilmez.</li>
+  <li>Girdiğiniz abonelik bilgileri (servis adı, tutar, yenileme tarihi, not vb.) <strong>yalnızca cihazınızda</strong> saklanır; bu bilgiler hiçbir sunucuya gönderilmez. Tek istisna: yeni bir abonelik eklediğinizde, seçtiğiniz kategori ve (varsa) hazır şablon bilgisi ölçüm amacıyla Firebase'e iletilir — kendi yazdığınız ad, tutar ya da not değil. Ayrıntı için aşağıdaki "Ölçüm ve Analiz" bölümüne bakın.</li>
   <li>Konum, rehber, SMS, arama geçmişi gibi hassas verilere erişmez.</li>
 </ul>
 
 <h2>İnternet Erişimi</h2>
-<p>Uygulama interneti yalnızca güncel döviz kurlarını almak için kullanır (dövizli aboneliklerin TL karşılığını göstermek amacıyla). Bu istek anonim bir kur servisine yapılır ve hiçbir kişisel veri içermez.</p>
+<p>Uygulama interneti iki amaçla kullanır: (1) güncel döviz kurlarını almak (dövizli aboneliklerin TL karşılığını göstermek amacıyla) — bu istek anonim bir kur servisine yapılır ve hiçbir kişisel veri içermez; (2) aşağıda anlatılan Firebase Analytics ölçüm verisini göndermek.</p>
+
+<h2>Ölçüm ve Analiz (Firebase Analytics)</h2>
+<p>Uygulamayı nasıl kullandığınızı anlamak ve geliştirmek için Google'ın Firebase Analytics hizmetini kullanıyoruz. Bu kapsamda veriyi işleyen taraf Google Firebase'dir. Topladığımız ölçüm verisi <strong>yalnızca ürün geliştirme ve kullanım ölçümü</strong> amacıyla kullanılır; hiçbir üçüncü tarafla paylaşılmaz; veriyi yalnızca, bizim adımıza veri işleyen olarak Google/Firebase işler. Reklam amaçlı hiçbir kullanım ya da paylaşım yoktur.</p>
+
+<p><strong>Gönderdiğimiz olaylar:</strong></p>
+<ul>
+  <li>Tanıtım (onboarding) akışının tamamlanması.</li>
+  <li>Yeni abonelik eklendiğinde: seçilen kategori (video, müzik, depolama gibi 14 sabit kategoriden biri) ve seçilen hazır şablon (Netflix, Spotify, ChatGPT gibi bilinen servis şablonlarından biri, ya da şablon kullanılmadan elle giriş yapıldıysa yalnızca "özel giriş" bilgisi). Şablon seçtiğinizde, hangi bilinen servise abone olduğunuz bu şablon bilgisinden anlaşılır. Buna karşılık <strong>kendi yazdığınız</strong> abonelik adı, tutar ve not alanları — şablon adını değiştirmiş olsanız da olmasanız da — hiçbir zaman gönderilmez.</li>
+  <li>Ücretsiz sürümün abonelik sınırına ulaşıldığında, o anki aktif abonelik sayısı.</li>
+  <li>Pro sürüm tanıtım ekranının (paywall) görüntülenmesi.</li>
+  <li>Satın alma tamamlandığında, bunun yeni bir satın alma mı yoksa önceki satın almanın geri yüklenmesi mi olduğu bilgisi; fiyat veya ürün detayı gönderilmez.</li>
+</ul>
+
+<p><strong>Otomatik olarak toplanan veriler:</strong> Firebase, yukarıdakilere ek olarak kurulum başına ürettiği anonim bir tanımlayıcı, cihaz modeli/üreticisi, işletim sistemi sürümü, uygulama sürümü, dil ayarı, saat dilimi ve IP adresinden türetilen kaba <strong>ülke/bölge</strong> düzeyinde konum bilgisini (şehir ya da hassas GPS konumu değil), ayrıca uygulama açılışı ve oturum başlangıcı gibi standart otomatik olayları toplar. Bunlar Firebase Analytics'in tüm uygulamalarda geçerli standart davranışıdır; uygulama tarafımızca ayrıca yapılandırılmamıştır.</p>
+
+<p><strong>Neyin gönderilmediği:</strong> Kendi yazdığınız abonelik adları, tutarlar, notlar, ad-soyad, e-posta, telefon numarası ya da başka bir kişisel veya finansal bilgi hiçbir şekilde Firebase'e gönderilmez.</p>
+
+<p><strong>Reklam kimliği:</strong> Uygulama, Android reklam kimliğini (Advertising ID) okuma iznini kaynak kodundan bilinçli olarak kaldırmıştır; bu kimlik toplanmaz ve Firebase'e gönderilmez.</p>
+
+<p><strong>Sizin kontrolünüz:</strong> Uygulama verilerini istediğiniz zaman cihaz ayarlarından (Ayarlar → Uygulamalar → AboneTakip → Depolama → Verileri temizle) veya uygulamayı kaldırarak silebilirsiniz. Ayrıca cihazınızın Google ayarları üzerinden reklam kimliğinizi sıfırlayabilir veya reklam kişiselleştirmesini sınırlayabilirsiniz — bu, AboneTakip'in kullanmadığı ama cihazınızdaki diğer uygulamaları da ilgilendiren genel bir Android ayarıdır.</p>
+
+<p>Ölçüm ve analizle ilgili sorularınız için: <a href="mailto:fntuna.37@gmail.com">fntuna.37@gmail.com</a></p>
 
 <h2>Bildirimler</h2>
 <p>Yenileme hatırlatıcıları cihazınızda yerel olarak planlanır. Bildirim izni isteğe bağlıdır ve yalnızca bu amaçla kullanılır.</p>
@@ -39,7 +61,7 @@
 <p>"Yedeği dışa aktar" özelliği, verilerinizi sizin seçtiğiniz bir konuma JSON dosyası olarak kaydeder. Bu dosyanın paylaşımı ve saklanması tamamen sizin kontrolünüzdedir.</p>
 
 <h2>Çocukların Gizliliği</h2>
-<p>Uygulama kişisel veri toplamadığı için 13 yaş altı kullanıcılara ilişkin veri işleme söz konusu değildir.</p>
+<p>Uygulama sizi kimliklendiren kişisel veri toplamadığı ve topladığı sınırlı ölçüm verisi de kimliklendirici olmadığı için, 13 yaş altı kullanıcılara özgü bir veri işleme söz konusu değildir.</p>
 
 <h2>Değişiklikler</h2>
 <p>Bu politika güncellenirse yeni sürüm bu sayfada yayımlanır.</p>
@@ -49,7 +71,7 @@
 
 <hr>
 <h2>Privacy Policy (English Summary)</h2>
-<p>AboneTakip does not collect any personal data. All subscription data you enter is stored locally on your device and never transmitted to any server. The app connects to the internet only to fetch anonymous currency exchange rates. Notifications are scheduled locally. In-app purchases are processed entirely by Google Play Billing. For questions: fntuna.37@gmail.com</p>
+<p>AboneTakip does not collect any data that directly identifies you (no name, email, phone number, or financial details). All subscription data you enter — service name, amount, renewal date, notes — is stored locally on your device and never transmitted to any server, with one exception: when you add a subscription, the chosen category and (if used) the built-in template — e.g. Netflix, Spotify, ChatGPT, or "custom" if entered manually — is sent to Firebase Analytics for product measurement; the name, amount and note fields as you typed them are never sent (choosing a template does, however, reveal which well-known service you subscribed to). The app also uses Firebase Analytics to measure a small set of product events (onboarding completion, free-tier limit reached, paywall view, purchase completed) plus Firebase's standard automatic data (an anonymous per-install identifier, device model, OS version, app version, language, timezone, and coarse IP-based country/region — not city-level or precise location). This measurement data is used solely for product development and is never shared with any third party; it is processed only by Google/Firebase acting as our data processor. It is never used for advertising. The app does not read the Android Advertising ID; it has been explicitly removed from the app's permissions. You can delete app data anytime via device Settings or by uninstalling the app, and can reset or limit ad personalization for your device generally via Google Settings. The app also connects to the internet to fetch anonymous currency exchange rates. Notifications are scheduled locally. In-app purchases are processed entirely by Google Play Billing. For questions: fntuna.37@gmail.com</p>
 
 <footer>AboneTakip © 2026 · <a href="pikselce.html">Pikselce Gizlilik Politikası</a></footer>
 </body>
